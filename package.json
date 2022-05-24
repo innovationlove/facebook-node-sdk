@@ -25,7 +25,8 @@
     "buildw": "babel -w src/ -d lib/",
     "test": "npm run build && node ./node_modules/mocha/bin/mocha --recursive",
     "test-live": "npm run build && node ./node_modules/mocha/bin/mocha --require test_live/_supports/ci-safe --recursive test_live",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "babel-runtime": "^6.23.0",
